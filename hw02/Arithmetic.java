@@ -9,6 +9,7 @@
 //      add main method
         public static void main(String[] args) {
             
+            
 //          input variables
             int nSocks=3;   // number of pairs of socks
             double sockCost$=2.58;  // cost of one pair of socks in $
@@ -54,6 +55,23 @@
             totalCostNoTax$=totalSocksCost$+totalGlassesCost$+totalEnvelopesCost$;   //total cost without tax calculation
             totalTax$=taxPercent*totalCostNoTax$;    // calculation of total tax
             totalCostWithTax$=totalTax$+totalCostNoTax$;    // calculation for tax plus total without tax
+
+//          decimal fixes
+            totalSocksCost$ = Math.round(totalSocksCost$*100.0)/100.0;
+            socksTax$ = Math.round(socksTax$*100.0)/100.0;
+            socksAfterTax$ = Math.round(socksAfterTax$*100.0)/100.0;
+            
+            totalGlassesCost$ = Math.round(totalGlassesCost$*100.0)/100.0;
+            glassesTax$ = Math.round(glassesTax$*100.0)/100.0;
+            glassesAfterTax$ = Math.round(glassesAfterTax$*100.0)/100.0;
+            
+            totalEnvelopesCost$ = Math.round(totalEnvelopesCost$*100.0)/100.0;
+            envelopesTax$ = Math.round(totalEnvelopesCost$*100.0)/100.0;
+            envelopesAfterTax$ = Math.round(envelopesAfterTax$*100.0)/100.0;
+            
+            totalCostNoTax$ = Math.round(totalCostNoTax$*100.0)/100.0;
+            totalTax$ = Math.round(totalTax$*100.0)/100.0;
+            totalCostWithTax$ = Math.round(totalCostWithTax$*100.0)/100.0;
 
 //          print results of each calculation
             System.out.println("The total cost of the socks before tax is $"+totalSocksCost$);
