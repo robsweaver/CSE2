@@ -19,8 +19,8 @@ import java.util.Scanner;
             "Enter a double, and I print the cube root: "); //  prompts the user for counts
             double number = myScanner.nextInt();      
             
-//          computation of the number^3 and print
-            System.out.println("The cube root is "+Math.pow(number,.3333));
+//          computations to make several
+            System.out.println("The cube root is"+Math.pow(number,.3333));
             
         }
     }
