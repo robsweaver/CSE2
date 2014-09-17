@@ -3,7 +3,7 @@
 // CSE hw03
 // Root Java Program
 
-//  create a scanner
+//  create a scanner to accept user input
 import java.util.Scanner;
 
 //  define a class
@@ -18,23 +18,9 @@ import java.util.Scanner;
             System.out.print(
             "Enter a double, and I print the cube root: "); //  prompts the user for counts
             double number = myScanner.nextInt();      
-
-//          variables
-            double guess;
-            double guess1;
-            double guess2;
-            double guess3;
-            double guess4;
             
-//          computation
-            guess=number/3;
-            guess1=(guess*guess*guess+number)/(3*guess*guess);
-            guess2=(guess1*guess1*guess1+number)/(3*guess1*guess1);
-            guess3=(guess2*guess2*guess2+number)/(3*guess2*guess2);
-            guess4=(guess3*guess3*guess3+number)/(3*guess3*guess3);
-            
-//          print output
-            System.out.println("The cube root is "+guess4);
+//          computation of the number^3 and print
+            System.out.println("The cube root is "+Math.pow(number,.3333));
             
         }
     }
