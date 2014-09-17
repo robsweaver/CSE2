@@ -34,7 +34,7 @@
                 (secsTrip2/secondsPerMinute) + " minutes and had " +
                 countsTrip2 + " counts.");
             
-//          unit conversions and computation (rotations*diameter*pi=distance)
+//          unit conversions from inches to miles and computation (rotations*diameter*pi=distance)
             distanceTrip1=countsTrip1*wheelDiameter*PI/inchesPerFoot/feetPerMile; // answer in miles
             distanceTrip2=countsTrip2*wheelDiameter*PI/inchesPerFoot/feetPerMile; // answer in miles
             totalDistance=distanceTrip1+distanceTrip2; // total distance
