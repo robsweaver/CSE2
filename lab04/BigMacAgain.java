@@ -37,7 +37,7 @@ import java.util.Scanner;   // importing scanner utility
                     burgersCost$= Math.round(nBigMacs*costPerBigMac$*100.0)/100.0; // will calculate total cost of burgers and round
                     System.out.println(nBigMacs+" Big Macs will cost $"+burgersCost$);}   // prints total cost of burgers
                 
-                else{System.out.println("Please enter an interger");   // tells user that input was not >0, so it is not acceptable
+                else{System.out.println("Please enter an interger > 0");   // tells user that input was not >0, so it is not acceptable
                     return;} // ends program
                 
             }else{System.out.println("Please enter an interger");   // tells user that the input was not an interger, so not acceptable
