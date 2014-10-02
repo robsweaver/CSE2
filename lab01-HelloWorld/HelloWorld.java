@@ -1,28 +1,24 @@
-//Rob Weaver
-//Demo
-//Hello World Java Program
-//
-//  first compile the program
-//      javac HelloWorld.java
-//  run the program
-//      java HelloWorld//
+import java.util.Scanner;
 
-//  define a class
 public class HelloWorld{
+  
+  public static void main (String[] args){
     
-//  add main method
-  public static void main(String[] args) {
-      
-//  print the statement with box around it
-    System.out.println("#######################");
-    System.out.println("#######################");
-    System.out.println("#                     #");
-    System.out.println("#  Hello World 2014!! #");
-    System.out.println("#                     #");
-    System.out.println("#######################");
-    System.out.println("#######################");
-    System.out.println("test");
+    Scanner myScanner = new Scanner (System.in);
     
-    //test/testtest
+    System.out.println("Frat guy: hows the ratio, bruh?");
+    System.out.print("Guys: ");
+    int nGuys = myScanner.nextInt();
+    System.out.print("Girls: ");
+    int nGirls = myScanner.nextInt();
+    
+    double ratio = nGirls/nGuys;
+    
+    if (ratio >= 2)
+{
+  System.out.println("Come on in, fellas");
+}    else {System.out.println("Sorry, we're full");}
+    
+    
   }
 }
