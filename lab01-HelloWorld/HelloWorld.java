@@ -14,11 +14,11 @@ public class HelloWorld{
     
     double ratio = nGirls/nGuys;
     
-    if (ratio >= 2)
-{
-  System.out.println("Come on in, fellas");
-}    else {System.out.println("Sorry, we're full");}
+    if (ratio >= 2){
+      System.out.println("Come on in, fellas");
+    }else {System.out.println("Sorry, we're full");}
     
+        
     
   }
 }
